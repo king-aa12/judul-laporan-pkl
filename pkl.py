@@ -51,10 +51,9 @@ def cari_buku(kategori_dicari, keyword, data):
 st.set_page_config(page_title="Pencarian Buku Laporan PKL", layout="wide")
 
 # Menampilkan QR code untuk aplikasi di perangkat mobile
-url_aplikasi = ""https://coba-pkl-polnep.streamlit.app"  # Ganti dengan URL aplikasi yang dihosting
+url_aplikasi = "https://coba-pkl-polnep.streamlit.app"  # Ganti dengan URL aplikasi yang dihosting
 qr_code = buat_qr_code(url_aplikasi)
-st.sidebar.image(qr_code, caption="Scan QR untuk Akses Aplikasi di HP", use_column_width=True)
-
+qr_image = Image.open(qr_code)
 
 # Menampilkan QR code di tampilan awal
 st.sidebar.image(qr_image, caption="Scan QR untuk Akses Aplikasi di HP")
