@@ -53,7 +53,8 @@ st.set_page_config(page_title="Pencarian Buku Laporan PKL", layout="wide")
 # Menampilkan QR code untuk aplikasi di perangkat mobile
 url_aplikasi = "https://judul-laporan-pkl-teknik-informatika.streamlit.app"  # Ganti dengan URL aplikasi yang dihosting
 qr_code = buat_qr_code(url_aplikasi)
-qr_image = Image.open(qr_code)
+st.sidebar.image(qr_code, caption="Scan QR untuk Akses Aplikasi di HP", use_column_width=True)
+
 
 # Menampilkan QR code di tampilan awal
 st.sidebar.image(qr_image, caption="Scan QR untuk Akses Aplikasi di HP")
