@@ -69,7 +69,7 @@ Portal Ini Untuk Mencari Judul Buku Laporan PKL Prodi Teknik Informatika Jurusan
 st.title("Portal Pencarian Judul Laporan PKL Prodi Teknik Informatika Jurusan Teknik Elektro Politeknik Negeri Pontianak")
 
 # Nama file JSON yang ingin dibaca
-nama_file = 'C://Users//Lenovo//Documents//syahrul//datajsonbuku.json'
+nama_file = 'datajsonbuku.json'
 
 # Membaca data dari file JSON
 data_perpustakaan = baca_data_dari_file(nama_file)
